@@ -226,6 +226,26 @@ h1, h2, h3, h4, h5, h6 {
       transform: rotate3d(0, 0, 1, 10deg);
     }
   }
+
+  .rotate-reverse{
+    -webkit-animation: rotate-reverse 10s normal linear infinite;
+    animation: rotate-reverse 10s normal linear infinite;
+  }
+
+  @keyframes rotate-reverse{
+    0% {
+      -webkit-transform: rotate3d(0, 0, 1, -10deg);
+      transform: rotate3d(0, 0, 1, -10deg);
+    }
+    50% {
+      -webkit-transform: rotate3d(0, 0, 1, 10deg);
+      transform: rotate3d(0, 0, 1, 10deg);
+    }
+    100% {
+      -webkit-transform: rotate3d(0, 0, 1, -10deg);
+      transform: rotate3d(0, 0, 1, -10deg);
+    }
+  }
   
 
   @media (max-width: 991px) {
@@ -303,6 +323,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
     border-radius: 10px;
     margin: 15px 0px;
+  }
+
+  .case-study .row{
+    align-items: center;
   }
 
   .case-img img{
