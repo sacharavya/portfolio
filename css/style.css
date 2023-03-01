@@ -104,6 +104,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 32px;
     margin-bottom: 25px;
 }
+.hero-text a{
+    text-decoration: none;
+    color: var(--white);
+}
+.hero-text a span{
+    background-color: var(--primary);
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
 .hero-text .portfolio{
     margin-bottom: 25px;
 }
