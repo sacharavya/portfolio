@@ -21,6 +21,12 @@
     --blue-bg: #E5EEFE;
     --primary-font: "Clash Display";
     --secondary-font: "Clash Grotesk";
+    --linear-bg: linear-gradient(135deg, #60CAFC 0%, #2F65FF 33.33%, #A56CFF 66.67%, #5D2EFF 100%);
+    --linear-primary: linear-gradient(90deg, #60CAFC 0%, #59BCFD 100%);
+    --linear-primary-second: linear-gradient(90deg, #54B1FD 0%, #4CA1FD 100%);
+    --linear-primary-third: linear-gradient(90deg, #438FFE 0%, #3D82FE 100%);
+    --linear-primary-fourth: linear-gradient(90deg, #3776FE 0%, #3067FF 100%);
+    --linear-primary-fifth: linear-gradient(90deg, #5EC4FD 0%, #346FFF 100%);
   }
 
   *{
@@ -114,7 +120,21 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
 }
+.hero-text .row{
+  max-width: 400px;
+}
 
+.hero-text .row .btn a{
+  font-family: var(--primary-font);
+font-size: 18px;
+font-weight: 500;
+transition: 0.4s;
+
+}
+.hero-text .row .btn a:hover{
+  text-decoration: underline;
+  transition: 0.4s;
+}
 .hero-text .portfolio{
     margin-bottom: 25px;
 }
